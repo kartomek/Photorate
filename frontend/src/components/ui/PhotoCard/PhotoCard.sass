@@ -1,0 +1,61 @@
+.PhotoCard
+    width: 325px
+    height: 390px
+    box-shadow: 0px 0px 19px -6px rgba(110, 114, 136, 1)
+    overflow: hidden
+    background-color: white
+    border-radius: 14px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .PhotoCard-image
+        height: 210px
+        width: 95%
+        overflow: hidden
+        border-radius: 10px
+        margin-top: 8px
+        cursor: pointer
+        img
+            height: 100%
+            width: 100%
+            object-fit: cover
+            border-radius: 10px
+            transition: linear 0.2s
+            &:hover
+                transform: scale(1.03)
+                filter: brightness(1.06)
+    .PhotoCard-content
+        width: 100%
+        .PhotoCard-content-title
+            margin: 0 auto
+            font-size: 23px
+            font-weight: 300
+            margin-top: 14px
+            cursor: pointer
+            width: max-content
+        .PhotoCard-content-author
+            margin: 0 auto
+            font-size: 23px
+            color: black
+            margin-top: 5px
+            cursor: pointer
+            width: max-content
+        .PhotoCard-content-statistics
+            display: flex
+            justify-content: space-between
+            margin-top: 35px
+            div
+                 width: 33.33%
+                 border-right: 1px solid rgb(192,192,192)
+                 height: 45px
+            div:last-child
+                border-right: none
+            .PhotoCard-content-statistics-value
+                text-align: center
+                line-height: 30px
+            .PhotoCard-content-statistics-title
+                font-size: 10px
+                text-align: center
+                color: rgb(192,192,192)
+                font-weight: bold        
+    

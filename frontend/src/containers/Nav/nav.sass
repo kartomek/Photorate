@@ -1,0 +1,40 @@
+.Nav
+    height: 80px
+    display: flex
+    position: fixed
+    z-index: 10
+    background-color: white
+    top: 0
+    left: 0
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    border-bottom: 2px solid #717171
+    .Nav-icons
+        display: flex
+        gap: 15px
+        width: 110px
+        margin-right: 10px
+        svg
+            cursor: pointer
+        
+    .Nav-buttons
+        display: flex
+        gap: 15px
+        margin-right: 20px
+        font-weight: 700
+        .Nav-buttons-login,
+        .Nav-buttons-register
+            cursor: pointer
+            &:hover
+                color: #0b6075
+
+@media(max-width: 500px)
+    .Nav
+        .Nav-logo
+            width: 150px
+            img
+                width: 100%
+        .Nav-buttons
+            font-size: 14px
+

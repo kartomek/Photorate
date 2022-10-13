@@ -1,0 +1,23 @@
+.Modal
+    z-index: 101
+    background-color: white
+    padding: 20px
+    border-radius: 10px
+    position: fixed
+    top: 10vh
+    left: 50%
+    transform: translateX(-50%)
+    animation: ModalAnimation 0.2s
+    .Modal-header 
+        display: flex
+        justify-content: flex-end
+        p
+            width: max-content
+            cursor: pointer
+            font-size: 20px
+
+@keyframes ModalAnimation 
+    from
+        top: 15vh
+    to
+        top: 10vh
